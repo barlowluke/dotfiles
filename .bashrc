@@ -27,6 +27,8 @@ export QT_FONT_DPI=96
 
 export CALIBRE_USE_SYSTEM_THEME=1
 
+export EDITOR="vim"
+
 alias pipe="ps aux | grep pipe"
 
 alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
