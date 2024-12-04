@@ -1,0 +1,51 @@
+syntax on
+set nu rnu
+set smartindent
+set nowrap
+set smartcase
+set noswapfile
+set nobackup
+set undodir=~/.vim/undodir
+set undofile
+set incsearch hlsearch
+set scrolloff=80
+set cmdheight=2
+set cursorline
+set showcmd
+set colorcolumn=80
+set shm+=I
+set laststatus=2
+set statusline=%f
+
+" 4-space indents
+set shiftwidth=4 
+" tab key for indentation
+set smarttab
+" only use space characters
+set expandtab
+" 8-space tabs, don't use
+" tabs and spaces together
+set tabstop=8 softtabstop=0
+
+let mapleader = "\<Space>"
+
+nnoremap <Leader>pv :Ex<cr>
+noremap <Leader>w <C-w>
+map <leader>n :bnext<cr>
+map <leader>p :bprevious<cr>
+map <leader>d :bdelete<cr>
+map <leader>hc :let @/ = ""<cr>
+
+filetype plugin on
+set clipboard=unnamedplus
+
+call plug#begin()
+Plug 'gruvbox-community/gruvbox'
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
+call plug#end()
+
+set background=dark
+colorscheme gruvbox
+
+let g:airline#extensions#tabline#enabled = 1
