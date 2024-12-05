@@ -9,7 +9,7 @@ set undodir=~/.vim/undodir
 set undofile
 set incsearch hlsearch
 set scrolloff=80
-set cmdheight=2
+set cmdheight=1
 set cursorline
 set showcmd
 set colorcolumn=80
