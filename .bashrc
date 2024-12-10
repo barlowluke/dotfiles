@@ -10,6 +10,8 @@
 # PS1='[\u@\h \W]\$ '
 # PS1='[\u@\h \W$(__git_ps1 " (%s)")]\$ '
 
+set -o vi
+
 export PATH="$PATH:$HOME/.config/emacs/bin"
 export PATH="$PATH:$HOME/.local/bin/yt-dlp"
 export PATH="$PATH:$HOME/dox/scripts"
