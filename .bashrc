@@ -16,6 +16,7 @@ export PATH="$PATH:$HOME/.config/emacs/bin"
 export PATH="$PATH:$HOME/.local/bin/yt-dlp"
 export PATH="$PATH:$HOME/dox/scripts"
 export PATH="$PATH:$HOME/mus/scripts"
+export PATH="$PATH:/opt"
 
 export XDG_CONFIG_HOME="$HOME/.config"
 export XDG_CACHE_HOME="$HOME/.cache"
@@ -23,17 +24,25 @@ export XDG_DATA_HOME="$HOME/.local/share"
 export XDG_STATE_HOME="$HOME/.local/state"
 export XDG_RUNTIME_DIR="/run/user/$UID"
 
-export QT_AUTO_SCREEN_SET_FACTOR=0
-export QT_SCALE_FACTOR=1.25
-export QT_FONT_DPI=96
+export EDITOR="vim"
+
+# export QT_AUTO_SCREEN_SCALE_FACTOR=1
+# export QT_ENABLE_HIDPI_SCALING=1
+# export QT_SCALE_FACTOR=1.25
+# export QT_FONT_DPI=96
+
+export INPUTRC="$XDG_CONFIG_HOME"/readline/inputrc
 
 export CALIBRE_USE_SYSTEM_THEME=1
 
-export EDITOR="vim"
-
+# check if pipewire/wireplumber are running
 alias pipe="ps aux | grep pipe"
 
+alias ncmpcpp='ncmpcpp -b ~/.config/ncmpcpp/bindings'
+
 alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
+
+alias ll='ls -l'
 
 SSH_ENV="$HOME/.ssh/agent-environment"
 
