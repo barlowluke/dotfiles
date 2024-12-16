@@ -1,0 +1,20 @@
+set editing-mode vi
+$if mode=vi
+
+set keymap vi-command
+# these are for vi-command mode
+Control-l: clear-screen
+# Control-p: 
+
+# trying something new
+# up and down searches incrementally
+# "\e[A": history-search-backward
+# "\e[B": history-search-forward
+# "\e[C": forward-char
+# "\e[D": backward-char
+
+set keymap vi-insert
+# these are for vi-insert mode
+Control-l: clear-screen 
+$endif
+
