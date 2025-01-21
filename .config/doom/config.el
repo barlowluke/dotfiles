@@ -21,8 +21,8 @@
 ;; See 'C-h v doom-font' for documentation and more examples of what they
 ;; accept. For example:
 ;;
-(setq doom-font (font-spec :family "Inconsolata" :size 15 :weight 'semi-light)
-      doom-variable-pitch-font (font-spec :family "Inconsolata" :size 16))
+(setq doom-font (font-spec :family "Inconsolata" :size 22 :weight 'semi-light)
+      doom-variable-pitch-font (font-spec :family "Inconsolata" :size 22))
 ;;
 ;; If you or Emacs can't find your font, use 'M-x describe-font' to look them
 ;; up, `M-x eval-region' to execute elisp code, and 'M-x doom/reload-font' to
@@ -78,3 +78,6 @@
 ;; C-c C-c exits insert mode
 (define-key evil-insert-state-map (kbd "C-c C-c") 'evil-normal-state)
 (define-key evil-normal-state-map (kbd "C-c C-c") 'evil-normal-state)
+
+;; relative numbers
+(setq display-line-numbers-type 'relative)
