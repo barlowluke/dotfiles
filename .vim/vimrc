@@ -67,8 +67,9 @@ set clipboard=unnamedplus
 call plug#begin()
 
 Plug 'gruvbox-community/gruvbox'
+Plug 'bluz71/vim-moonfly-colors'
 
 call plug#end()
 
 set background=dark
-colorscheme gruvbox
+colorscheme moonfly
