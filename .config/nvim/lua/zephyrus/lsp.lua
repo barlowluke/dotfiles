@@ -40,7 +40,7 @@ vim.api.nvim_create_autocmd('LspAttach', {
 require('lspconfig').gleam.setup({})
 require('lspconfig').ocamllsp.setup({})
 require('lspconfig').ocamllsp.setup({})
-require'lspconfig'.lua_ls.setup{}
+require('lspconfig').lua_ls.setup{}
 require('lspconfig').clangd.setup({})
 
 local cmp = require('cmp')
