@@ -4,4 +4,4 @@ require("zephyrus.plug")
 require("zephyrus.lsp")
 
 require("mason").setup()
-vim.cmd("colorscheme gruvbox")
+vim.cmd("colorscheme moonfly")

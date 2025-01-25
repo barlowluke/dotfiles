@@ -8,7 +8,7 @@ vim.opt.swapfile = false
 
 vim.opt.guicursor = ""
 
-vim.opt.showmode = true
+vim.opt.showmode = false
 vim.opt.showcmd = true
 
 -- tab options
