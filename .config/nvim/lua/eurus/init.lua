@@ -4,4 +4,5 @@ require("eurus.plug")
 require("eurus.lsp")
 
 require("mason").setup()
+require("autoclose").setup()
 vim.cmd("colorscheme moonfly")
