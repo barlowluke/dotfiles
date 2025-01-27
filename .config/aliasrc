@@ -1,0 +1,10 @@
+alias ll='ls -l'
+
+alias ncmpcpp='ncmpcpp -b ~/.config/ncmpcpp/bindings'
+
+alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
+
+# for git usage
+alias gst='git status'
+alias gau='git add -u'
+alias gcm='git commit -m'

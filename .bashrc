@@ -10,6 +10,8 @@
 # PS1='[\u@\h \W]\$ '
 # PS1='[\u@\h \W$(__git_ps1 " (%s)")]\$ '
 
+source ~/.config/aliasrc
+
 set -o vi
 
 export PATH="$PATH:$HOME/.config/emacs/bin"
@@ -34,15 +36,6 @@ export EDITOR="vim"
 export INPUTRC="$XDG_CONFIG_HOME"/readline/inputrc
 
 export CALIBRE_USE_SYSTEM_THEME=1
-
-# check if pipewire/wireplumber are running
-alias pipe="ps aux | grep pipe"
-
-alias ncmpcpp='ncmpcpp -b ~/.config/ncmpcpp/bindings'
-
-alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
-
-alias ll='ls -l'
 
 SSH_ENV="$HOME/.ssh/agent-environment"
 
