@@ -25,7 +25,7 @@ vim.opt.wrap = false
 vim.opt.hlsearch = true
 vim.opt.incsearch = true
 
-vim.opt.scrolloff = 8
+vim.opt.scrolloff = 30
 
 vim.opt.colorcolumn = "80"
 
