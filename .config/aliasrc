@@ -8,6 +8,7 @@ alias dfa='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME add'
 alias dfau='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME add -u'
 alias dfcm='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME commit -m'
 alias dfd='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME diff'
+alias dfp='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME push'
 
 # for git usage
 alias gst='/usr/bin/git status'
