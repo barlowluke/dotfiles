@@ -3,10 +3,10 @@ alias ll='ls -l'
 alias ncmpcpp='ncmpcpp -b ~/.config/ncmpcpp/bindings'
 
 alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
-alias dfs='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME status'
+alias dfst='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME status'
 alias dfa='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME add'
 alias dfau='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME add -u'
-alias dfc='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME commit -m'
+alias dfcm='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME commit -m'
 alias dfd='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME diff'
 
 # for git usage
