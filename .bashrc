@@ -27,6 +27,7 @@ export XDG_STATE_HOME="$HOME/.local/state"
 export XDG_RUNTIME_DIR="/run/user/$UID"
 
 export EDITOR="vim"
+export TERM="st"
 
 # export QT_AUTO_SCREEN_SCALE_FACTOR=1
 # export QT_ENABLE_HIDPI_SCALING=1
