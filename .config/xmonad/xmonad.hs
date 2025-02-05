@@ -10,6 +10,9 @@
 import XMonad
 import Data.Monoid
 import System.Exit
+import XMonad.Util.Run
+import XMonad.Hooks.ManageDocks
+import Graphics.X11.ExtraTypes.XF86
 
 import qualified XMonad.StackSet as W
 import qualified Data.Map        as M
@@ -93,7 +96,7 @@ myKeys conf@(XConfig {XMonad.modMask = modm}) = M.fromList $
     , ((modm,               xK_m     ), windows W.focusMaster  )
 
     -- Swap the focused window and the master window
-    , ((modm,               xK_Return), windows W.swapMaster)
+    , ((modm .|. shiftMask, xK_Return), windows W.swapMaster)
 
     -- Swap the focused window with the next window
     , ((modm .|. shiftMask, xK_j     ), windows W.swapDown  )
@@ -120,7 +123,17 @@ myKeys conf@(XConfig {XMonad.modMask = modm}) = M.fromList $
     -- Use this binding with avoidStruts from Hooks.ManageDocks.
     -- See also the statusBar function from Hooks.DynamicLog.
     --
-    -- , ((modm              , xK_b     ), sendMessage ToggleStruts)
+    , ((modm              , xK_b     ), sendMessage ToggleStruts)
+
+    -- BRIGHTNESS COMMANDS
+    , ((0                 , xF86XK_MonBrightnessUp ), spawn "/usr/bin/brightnessctl set 5%+")
+    , ((0                 , xF86XK_MonBrightnessDown ), spawn "/usr/bin/brightnessctl set 5%-")
+
+    -- VOLUME COMMANDS
+    , ((0                 , xF86XK_AudioRaiseVolume ), spawn "/usr/bin/wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%+")
+    , ((0                 , xF86XK_AudioLowerVolume ), spawn "/usr/bin/wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%-")
+    , ((0                 , xF86XK_AudioMute ), spawn "/usr/bin/wpctl set-volume @DEFAULT_AUDIO_SINK@ toggle")
+    , ((0                 , xF86XK_AudioMicMute ), spawn "/usr/bin/wpctl set-volume @DEFAULT_AUDIO_SOURCE@ toggle")
 
     -- Quit xmonad
     , ((modm .|. shiftMask, xK_q     ), io (exitWith ExitSuccess))
@@ -250,7 +263,9 @@ myStartupHook = return ()
 
 -- Run xmonad with the settings you specify. No need to modify this.
 --
-main = xmonad defaults
+main = do
+  xmproc <- spawnPipe "xmobar -x 0 /home/luke/.config/xmobar/xmobarrc"
+  xmonad defaults
 
 -- A structure containing your configuration settings, overriding
 -- fields in the default config. Any you don't override, will
