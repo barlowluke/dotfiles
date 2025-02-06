@@ -11,7 +11,7 @@ Config {
    -- layout
    , sepChar =  "%"   -- delineator between plugin names and straight text
    , alignSep = "}{"  -- separator between left-right alignment
-   , template = "%battery% | %multicpu% | %coretemp% | %memory% | %dynnetwork% }{ %RJTT% | %date% || %kbd% "
+   , template = "%battery% | %multicpu% | %coretemp% | %memory% | %dynnetwork% }{ %date% || %kbd% "
 
    -- general behavior
    , lowerOnStart =     True    -- send to bottom of window stack on start
@@ -51,7 +51,7 @@ Config {
                              ] 10
 
         -- cpu activity monitor
-        , Run MultiCpu       [ "--template" , "Cpu: <total0>%|<total1>%"
+        , Run MultiCpu       [ "--template" , "cpu: <total0>%|<total1>%"
                              , "--Low"      , "50"         -- units: %
                              , "--High"     , "85"         -- units: %
                              , "--low"      , "darkgreen"
@@ -60,7 +60,7 @@ Config {
                              ] 10
 
         -- cpu core temperature monitor
-        , Run CoreTemp       [ "--template" , "Temp: <core0>°C|<core1>°C"
+        , Run CoreTemp       [ "--template" , "temp: <core0>°C|<core1>°C"
                              , "--Low"      , "70"        -- units: °C
                              , "--High"     , "80"        -- units: °C
                              , "--low"      , "darkgreen"
@@ -69,7 +69,7 @@ Config {
                              ] 50
                           
         -- memory usage monitor
-        , Run Memory         [ "--template" ,"Mem: <usedratio>%"
+        , Run Memory         [ "--template" ,"mem: <usedratio>%"
                              , "--Low"      , "20"        -- units: %
                              , "--High"     , "90"        -- units: %
                              , "--low"      , "darkgreen"
@@ -78,7 +78,7 @@ Config {
                              ] 10
 
         -- battery monitor
-        , Run Battery        [ "--template" , "Batt: <acstatus>"
+        , Run Battery        [ "--template" , "bat: <acstatus>"
                              , "--Low"      , "10"        -- units: %
                              , "--High"     , "80"        -- units: %
                              , "--low"      , "darkred"
