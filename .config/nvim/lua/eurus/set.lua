@@ -8,6 +8,8 @@ vim.opt.swapfile = false
 
 vim.opt.guicursor = ""
 
+vim.opt.cursorline = true
+
 vim.opt.showmode = false
 vim.opt.showcmd = true
 
