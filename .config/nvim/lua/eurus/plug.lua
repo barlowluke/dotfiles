@@ -21,4 +21,7 @@ Plug('hrsh7th/vim-vsnip')
 
 Plug('m4xshen/autoclose.nvim')
 
+Plug('nvim-lua/plenary.nvim')
+Plug('nvim-telescope/telescope.nvim', { ['tag'] = '0.1.8' })
+
 vim.call('plug#end')
