@@ -78,3 +78,6 @@
 ;; C-c C-c exits insert mode
 (define-key evil-insert-state-map (kbd "C-c C-c") 'evil-normal-state)
 (define-key evil-normal-state-map (kbd "C-c C-c") 'evil-normal-state)
+
+;; default notes file
+(setq org-default-notes-file (concat org-directory "/home/luke/org/refile.org"))
