@@ -1,7 +1,3 @@
--- NOTE: to make any of this work you need a language server.
--- If you don't know what that is, watch this 5 min video:
--- https://www.youtube.com/watch?v=LaS32vctfOY
-
 -- Reserve a space in the gutter
 vim.opt.signcolumn = 'yes'
 
@@ -42,6 +38,8 @@ require('lspconfig').ocamllsp.setup({})
 require('lspconfig').ocamllsp.setup({})
 require('lspconfig').lua_ls.setup{}
 require('lspconfig').clangd.setup({})
+require('lspconfig').vhdl_ls.setup({})
+require('lspconfig').texlab.setup({})
 
 local cmp = require('cmp')
 
@@ -57,3 +55,5 @@ cmp.setup({
   },
   mapping = cmp.mapping.preset.insert({}),
 })
+
+
