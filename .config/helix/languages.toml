@@ -1,0 +1,18 @@
+[[language]]
+name = "verilog"
+scope = "source.v"
+file-types = [ "verilog", "v" ]
+comment-token = "#"
+indent = { tab-width = 2, unit = "  " }
+language-servers = [ "svlangserver" ]
+
+# [[language]]
+# name = "c++"
+# scope = "source.cpp"
+# file-types = [ "cpp" ]
+# indent = { tab-width = 4, unit = "    " }
+# language-servers = [ "clangd" ]
+
+[language-server]
+svlangserver = { command = "svlangserver" }
+
