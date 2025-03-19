@@ -72,7 +72,13 @@ myKeys conf@(XConfig {XMonad.modMask = modm}) = M.fromList $
     , ((modm .|. shiftMask, xK_p     ), spawn "gmrun")
 
     -- LAUNCH FIREFOX
-    , ((modm,               xK_slash ), spawn "firefox")
+    , ((modm,               xK_semicolon ), spawn "firefox")
+
+    -- LAUNCH EMACS
+    , ((modm,               xK_slash ), spawn "emacs")
+
+    -- LAUNCH SLOCK
+    , ((modm .|. shiftMask, xK_l     ), spawn "slock")
 
     -- close focused window
     , ((modm .|. shiftMask, xK_c     ), kill)
@@ -137,9 +143,6 @@ myKeys conf@(XConfig {XMonad.modMask = modm}) = M.fromList $
     , ((0                 , xF86XK_AudioLowerVolume ), spawn "/usr/bin/wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%-")
     , ((0                 , xF86XK_AudioMute ), spawn "/usr/bin/wpctl set-volume @DEFAULT_AUDIO_SINK@ toggle")
     , ((0                 , xF86XK_AudioMicMute ), spawn "/usr/bin/wpctl set-volume @DEFAULT_AUDIO_SOURCE@ toggle")
-
-    -- LAUNCH SLOCK
-    , ((modm .|. shiftMask, xK_l     ), spawn "slock")
 
     -- Quit xmonad
     , ((modm .|. shiftMask, xK_q     ), io (exitWith ExitSuccess))
