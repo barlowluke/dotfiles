@@ -17,3 +17,9 @@ alias gau='/usr/bin/git add -u'
 alias gcm='/usr/bin/git commit -m'
 alias gd='/usr/bin/git diff'
 alias gp='/usr/bin/git push'
+
+# neovim
+alias nv='neovim'
+
+# helix
+alias hx='helix'
