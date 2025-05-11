@@ -8,7 +8,8 @@ theme = "everforest_dark"
 [keys.select]
 "C-c" = ["normal_mode", "keep_primary_selection", "collapse_selection"]
 
-[keys.normal.g]
+# gq to reflow
+[keys.select.g]
 q = ":reflow"
 
 # <Space>o for file picker in current dir
@@ -16,7 +17,10 @@ q = ":reflow"
 o = "file_picker_in_current_buffer_directory"
 
 [editor]
+scrolloff = 10
+line-number = "relative"
 cursorline = true
+continue-comments = true
 lsp.display-inlay-hints = true
 rulers = [80]
 
