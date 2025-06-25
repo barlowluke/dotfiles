@@ -1,3 +1,5 @@
+local vim = vim
+
 vim.opt.syntax = "on"
 
 vim.opt.nu = true
