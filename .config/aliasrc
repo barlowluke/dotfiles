@@ -1,4 +1,4 @@
-alias ll='ls -l'
+alias ll='ls -1'
 
 alias ncmpcpp='ncmpcpp -b ~/.config/ncmpcpp/bindings'
 
@@ -19,7 +19,7 @@ alias gd='/usr/bin/git diff'
 alias gp='/usr/bin/git push'
 
 # neovim
-alias nv='neovim'
+alias nv='nvim'
 
 # helix
 alias hx='helix'
