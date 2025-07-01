@@ -18,7 +18,7 @@ alias gcm='/usr/bin/git commit -m'
 alias gd='/usr/bin/git diff'
 alias gp='/usr/bin/git push'
 
-# neovim
+alias vi='vim'
 alias nv='nvim'
 
 # helix

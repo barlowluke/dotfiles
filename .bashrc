@@ -15,7 +15,7 @@ source ~/.config/aliasrc
 set -o vi
 
 export PATH="$PATH:$HOME/.config/emacs/bin"
-export PATH="$PATH:$HOME/.local/bin/yt-dlp"
+export PATH="$PATH:$HOME/.local/bin/"
 export PATH="$PATH:$HOME/dox/scripts"
 export PATH="$PATH:$HOME/mus/scripts"
 export PATH="$PATH:/opt"

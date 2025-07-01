@@ -5,11 +5,13 @@ vim.call('plug#begin')
 
 -- colorschemes
 Plug('gruvbox-community/gruvbox')
-Plug('bluz71/vim-moonfly-colors')
 
 Plug('vim-airline/vim-airline')
 
 -- Package manager
 Plug('williamboman/mason.nvim')
+
+-- LSP plugins
+Plug('neovim/nvim-lspconfig')
 
 vim.call('plug#end')
