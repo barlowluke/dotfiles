@@ -1,0 +1,12 @@
+[window]
+opacity = 0.9
+padding = { x = 10, y = 10 }
+
+[general]
+import = [
+    "~/.config/alacritty/themes/themes/gruvbox-dark.toml"
+]
+
+[env]
+term = "xterm-256color"
+
