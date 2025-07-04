@@ -11,6 +11,8 @@ import System.Exit
 import XMonad.Util.Run
 import XMonad.Hooks.ManageDocks
 import Graphics.X11.ExtraTypes.XF86
+import XMonad.Actions.CycleRecentWS
+import XMonad.Util.SpawnOnce
 
 import qualified XMonad.StackSet as W
 import qualified Data.Map        as M
@@ -116,6 +118,9 @@ myKeys conf@(XConfig {XMonad.modMask = modm}) = M.fromList $
     -- Restart xmonad
     , ((modm              , xK_q     ), spawn "xmonad --recompile; xmonad --restart")
 
+    -- swap between two most recent workspaces
+    , ((modm              , xK_Tab   ), toggleRecentWS)
+
     -- Run xmessage with a summary of the default keybindings (useful for beginners)
     , ((modm .|. shiftMask, xK_slash ), spawn ("echo \"" ++ help ++ "\" | xmessage -file -"))
     ]
@@ -168,6 +173,7 @@ myManageHook = composeAll
     , resource  =? "desktop_window" --> doIgnore
     , resource  =? "kdesktop"       --> doIgnore 
     , resource  =? "gmrun"          --> doFloat
+    , resource  =? "anki"           --> doFloat
     , resource  =? "xmessage"       --> doFloat ]
 
 myEventHook = mempty

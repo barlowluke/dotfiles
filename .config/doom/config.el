@@ -95,8 +95,7 @@
        :timeout 0.25
        "q" 'toggle-input-method))
 
-(set-fontset-font t 'japanese-jisx0213.2004-1
-        ;; Source Han Code JP: https://github.com/adobe-fonts/source-han-code-jp
-        (font-spec :family "Source Han Code JP" :size 10))
+(set-fontset-font "fontset-default" 'japanese-jisx0208
+    (font-spec :family "Source Han Code JP" :size 5))
 
 (setq quail-japanese-use-double-n t)

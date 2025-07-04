@@ -1,5 +1,5 @@
 #
-# ~/.bashrc
+
 #
 
 # If not running interactively, don't do anything
@@ -30,9 +30,13 @@ export EDITOR="vim"
 export TERM="st"
 
 # export QT_AUTO_SCREEN_SCALE_FACTOR=1
-# export QT_ENABLE_HIDPI_SCALING=1
-# export QT_SCALE_FACTOR=1.25
-# export QT_FONT_DPI=96
+export QT_ENABLE_HIDPI_SCALING=1
+export QT_SCALE_FACTOR=1.25
+export QT_FONT_DPI=96
+
+export GTK_IM_MODULE=fcitx
+export QT_IM_MODULE=fcitx
+export XMODIFIERS=@im=fcitx
 
 export INPUTRC="$XDG_CONFIG_HOME"/readline/inputrc
 
