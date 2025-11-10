@@ -41,6 +41,13 @@ vim.opt.signcolumn = "yes"
 
 vim.opt.termguicolors = true
 
+vim.g.tex_flavor = "latex"
+vim.g.vimtex_view_method= "zathura"
+vim.g.vimtex_quickfix_mode=0
+vim.opt.conceallevel = 1
+vim.g.tex_conceal = "abdmg"
+vim.gvimtex_quickfix_mode = 0
+
 
 -- let g:loaded_node_provider = 0
 -- let g:loaded_perl_provider = 0
