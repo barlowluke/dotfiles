@@ -47,8 +47,3 @@ vim.g.vimtex_quickfix_mode=0
 vim.opt.conceallevel = 1
 vim.g.tex_conceal = "abdmg"
 vim.gvimtex_quickfix_mode = 0
-
-
--- let g:loaded_node_provider = 0
--- let g:loaded_perl_provider = 0
--- let g:loaded_python3_provider = 0

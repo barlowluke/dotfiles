@@ -45,8 +45,8 @@ myKeys conf@(XConfig {XMonad.modMask = modm}) = M.fromList $
     -- LAUNCH EMACS
     , ((modm,               xK_slash ), spawn "emacs")
 
-    -- LAUNCH SLOCK
-    , ((modm .|. shiftMask, xK_l     ), spawn "slock")
+    -- LAUNCH XSCREENSAVER
+    , ((modm .|. shiftMask, xK_l     ), spawn "xscreensaver-command -lock")
 
     -- close focused window
     , ((modm .|. shiftMask, xK_c     ), kill)

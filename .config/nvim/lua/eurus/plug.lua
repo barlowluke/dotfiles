@@ -3,17 +3,12 @@ local Plug = vim.fn['plug#']
 
 vim.call('plug#begin')
 
--- colorschemes
 Plug('gruvbox-community/gruvbox')
-
 Plug('vim-airline/vim-airline')
-
--- Package manager
-Plug('williamboman/mason.nvim')
-
 Plug('lervag/vimtex')
+Plug('nvim-treesitter/nvim-treesitter')
 
--- LSP plugins
+-- LSP plugin
 Plug('neovim/nvim-lspconfig')
 
 vim.call('plug#end')

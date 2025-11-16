@@ -44,7 +44,7 @@
 
 ;; If you use `org' and don't want your org files in the default location below,
 ;; change `org-directory'. It must be set before org loads!
-(setq org-directory "~/org/")
+(setq org-directory "~/dox/org/")
 
 
 ;; Whenever you reconfigure a package, make sure to wrap your config in an
@@ -79,14 +79,17 @@
 ;; You can also try 'gd' (or 'C-c c d') to jump to their definition and see how
 ;; they are implemented.
 
-;; C-c C-c exits insert mode
-(define-key evil-insert-state-map (kbd "C-c C-c") 'evil-normal-state)
-(define-key evil-normal-state-map (kbd "C-c C-c") 'evil-normal-state)
-
-;; default notes file
-(setq org-default-notes-file (concat org-directory "/home/luke/org/refile.org"))
-
 (require 'org-inlinetask)
+
+(setq org-roam-directory "~/dox/roam")
+(setq org-roam-v2-ack t)
+
+(global-visual-line-mode t)
+(add-hook 'org-mode-hook '(lambda () (setq fill-column 80)))
+(add-hook 'org-mode-hook 'turn-on-auto-fill)
+
+(after! evil-escape
+  (setq evil-escape-key-sequence "jk"))
 
 (setq default-input-method "japanese")
 (general-define-key
@@ -99,3 +102,4 @@
     (font-spec :family "Source Han Code JP" :size 5))
 
 (setq quail-japanese-use-double-n t)
+
