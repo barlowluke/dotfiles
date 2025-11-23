@@ -1,6 +1,7 @@
-*
 .dotfiles/
 .vim/undodir/
 .vim/.netrwhist
+.vim/plugged/
 .config/weechat/certs
-!.*/
+.config/pulse/cookie
+.config/emacs
