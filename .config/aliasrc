@@ -25,3 +25,6 @@ alias nv='nvim'
 
 # helix
 alias hx='helix'
+
+# octave
+alias octave='octave --gui'

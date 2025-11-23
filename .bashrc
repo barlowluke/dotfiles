@@ -18,7 +18,7 @@ export PATH="$PATH:$HOME/.config/emacs/bin"
 export PATH="$PATH:$HOME/.local/bin/"
 export PATH="$PATH:$HOME/dox/scripts"
 export PATH="$PATH:$HOME/mus/scripts"
-export PATH="$PATH:/opt"
+export PATH="$PATH:/opt/MATLAB/R2025a/bin"
 
 export XDG_CONFIG_HOME="$HOME/.config"
 export XDG_CACHE_HOME="$HOME/.cache"
@@ -37,6 +37,8 @@ export QT_FONT_DPI=96
 export GTK_IM_MODULE=fcitx
 export QT_IM_MODULE=fcitx
 export XMODIFIERS=@im=fcitx
+
+export BINDIR=/home/luke/matlab/bin/glnxa64
 
 export INPUTRC="$XDG_CONFIG_HOME"/readline/inputrc
 
